@@ -83,7 +83,7 @@ function App() {
   const [expenseList,setExpenseList]=useState(EXPENSES)
   console.log(expenseList)
   const addExpense=async(newExp)=>{
-    await fetch('http://localhost:3004/expense/create',{method:"POST",
+    await fetch('http://localhost:5000/expense/create',{method:"POST",
     headers:{
       'content-Type' : 'application/json'
 
